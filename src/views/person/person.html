@@ -1,0 +1,28 @@
+{{define "person"}}
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Learning Table</title>
+        <link rel="stylesheet" href="/assets/site.css" />
+    </head>
+    <body>
+
+    <p>Page: Person</p>
+    <table>
+        <tr>
+            {{/* example how to use actions */}}
+            <td>{{"Name"}}</td>
+            <td>: {{.Name}}</td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            {{$gender := .Gender}}
+            <td style="text-transform: capitalize;">:
+                {{$gender}}
+            </td>
+        </tr>
+    </table>
+
+    </body>
+    </html>
+{{end}}

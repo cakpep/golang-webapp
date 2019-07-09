@@ -8,7 +8,7 @@ import (
 func ViewHandler(fileName string, data interface{}, w http.ResponseWriter, r *http.Request) {
 
 	var tmpl = template.Must(template.ParseFiles(
-		"src/views/site/"+ fileName +".html",
+		//"src/views/site/"+ fileName +".html",
 		"src/views/layouts/_header.html",
 		"src/views/layouts/_footer.html",
 	))

@@ -1,12 +1,14 @@
-<!DOCTYPE html>
+{{define "index"}}
 <html>
 <head>
     <title>{{.title}}</title>
     <link rel="stylesheet" href="/assets/site.css" />
 </head>
 <body>
-    {{ template "_header.html"}}
+    {{ template "_header"}}
+    <p>Page: Index</p>
     <p>Welcome {{.name}}</p>
-    {{ template "_footer.html"}}
+    {{ template "_footer"}}
 </body>
 </html>
+{{end}}
